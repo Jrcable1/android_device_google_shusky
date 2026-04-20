@@ -13,6 +13,9 @@ DEVICE_PATH := device/google/shusky
 VENDOR_PATH := vendor/google/husky
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 
+# setup dalvik vm configs.
+$(call inherit-product, frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8 Pro
