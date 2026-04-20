@@ -24,3 +24,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
 
 # WiFi
 include $(DEVICE_PATH)/wifi/BoardConfig-wifi.mk
+
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true 
